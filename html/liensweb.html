@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/liensweb.css">
+    <title>Activité 3</title>
+</head>
+
+<body>
+    <h1>Activité 3</h1>
+
+    <div id="addedPost" class="lien"><p>Le lien a bien été ajouté !</p></div>
+    <div id="error" class="lien"></div>
+
+    <button id="ajoutButton">Ajouter un site</button>
+
+    <form id="formulaire" method="post">
+        <input type="text" name="auteur"  placeholder="Entrez votre nom" required>
+        <input type="text" name="titreSite" placeholder="Entrez le titre du lien" required>
+        <input type="url" name="urlSite" placeholder="Entrez adresse web" required>
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <!-- Les nouveaux éléments sont ajoutés dans cette balise -->
+    <div id="contenu">
+        <p>Aucun post trouvé depuis l'API !</p>
+    </div>
+
+    <script src="../js/ajax.js"></script>
+    <script src="../js/liensweb.js"></script>
+</body>
+
+</html>
